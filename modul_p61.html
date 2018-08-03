@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body {
+	background-image: url(pict/texture.jpg);
+	}
+#wrap {
+	max-width:1000px;
+	margin:auto;
+	background-color:transparent;
+	}
+#menu_horisontal {
+	width:1000px;
+	height:30px;
+	border:1px solid black;
+	background-color: transparent;
+	color: black;
+	text-align:center;
+	position:fixed;
+	top:0px;
+	z-index:200;
+	box-shadow: 5px 5px 5px black;
+	border-radius: 5px;
+	}
+#menu_horisontal ul {
+	padding:0px;
+	margin:3px;
+	list-style-type:none;
+	text-align:center;
+	}
+#menu_horisontal li {
+	display:inline;
+	}
+#menu_horisontal li a {
+	text-decoration:none;
+	background-color:lightgray;
+	color:black;
+	border-right:1px solid gray;
+	padding: .2em 1em;
+	font-size:12px;
+	}
+#menu_horisontal {
+	background-color:gray;
+	color:white;
+	}
+#header {
+	position:relative;
+	top:27px;
+	max-width:1000px;
+	height:200px;
+	background-color:transparent;
+	display:block;
+	}
+#slogan {
+	position:absolute;
+	width:400px;
+	height:170px;
+	top:10px;
+	left:10px;
+	background-color: transparent;
+	}
+#slogan h1 {
+	font-family:gabrielle;
+	font-size: 55px;
+	text-align:right;
+	font-weight:bold;
+	color:green;
+	margin-top:30px;
+	margin-bottom: 0px;
+	padding:0;
+	text-shadow:3px 2px 1px grey;
+	}
+@font-face {
+	font-family:gabrielle;
+	src:url(gabrielle.ttf);
+	}
+#slogan .slogan{
+	font-family: tahoma, verdana, arial;
+	font-size: 14px;
+	text-align: right;
+	text-decoration: overline;
+	color: brown;
+	font-weight: bold;
+	font-style: italic;
+	}
+#gambar {
+	position:absolute;
+	width:400px;
+	height:170px;
+	top:10px;
+	right:10px;
+	background-color: transparent;
+	}
+#kiri {
+	width:200px;
+	margin-top:30px;
+	min-height:510px;
+	position:relative;
+	display:block;
+	float:left;
+	}
+#menu_vertikal {
+	position:absolute;
+	width:200px;
+	height:300px;
+	display:block;
+	border:1px solid black;
+	background-color: lightgreen;
+	color:green;
+	line-height:30px;
+	text-align:center;
+	}
+#menu_vertikal li {
+	list-style-type:none;
+	text-align:left;
+	}
+#menu_vertikal li a {
+	text-decoration:none;
+	width: 175px;
+	background-color:lightyellow;
+	display:block;
+	border-top:1px solid black;
+	padding: .2em .8em;
+	color: grad;
+	}
+#menu_vertikal ul {
+	padding:0px;
+	margin-top:8px;
+	}
+#menu_vertikal li a:hover {
+	background-color: lightgreen;
+	color:black;
+	}
+#banner {
+	position:absolute;
+	top:305px;
+	width:200px;
+	min-height:200px;
+	background-color:lightgreen;
+	display:block;
+	border:1px solid black;
+	margin-bottom:200px;
+	}
+#content {
+	float:left;
+	max-width: 700px;
+	margin-top: 30px;
+	margin-left: 5px;
+	background-color: white;
+	display: block;
+	border: 1px solid black;
+	}
+#footer {
+	clear:both;
+	margin-top: 50px;
+	max-width: 1000px;
+	height: 80px;
+	background-color:lightgray;
+	color: black;
+	display:block;
+	text-align:center;
+	padding:2px;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="menu_horisontal">
+	<ul>
+			<li><a href="#">Welcome</a></li>
+			<li><a href="#">Wisata Alam</a></li>
+			<li><a href="#">Wisata Kuliner</a></li>
+			<li><a href="#">Wisata Budaya</a></li>
+			<li><a href="#">Photos</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</div>
+	<div id="header">
+		<div id="slogan">
+		<h1>Wisata Jogjakarta</h1>
+		<div class="slogan">Surga Wisata Alam, Kuliner dan Budaya</div>
+		</div>
+		<div id="gambar"><img src="pict/wisata.png" height="170px"/></div>
+	</div>
+	<div id="kiri">
+		<div id="menu_vertikal">
+		.:: Menu ::.
+		<ul>
+			<li><a href="#">Welcome</a></li>
+			<li><a href="#">Wisata Alam</a></li>
+			<li><a href="#">Wisata Kuliner</a></li>
+			<li><a href="#">Wisata Budaya</a></li>
+			<li><a href="#">Photos</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+		</div>
+	<div id="banner">
+		<img src="pict/banner.jpg" width="200px" height="200px"/>
+	</div>
+	</div>
+	<div id="content">
+		<h2>Foto-foto tempat wisata</h2>
+		<p style ="text-alight:justify"></b>
+		<img src="pict/prambanan.jpg" width="300px height="200px border="1px" />
+		<img src="pict/pindul.jpg" width="300px height="200px border="1px" />
+		<img src="pict/parangtritis.jpg" width="300px height="200px border="1px" />
+		<img src="pict/alun2kidul.jpg" width="300px height="200px border="1px" />
+	</div>
+	<div id="footer">
+	<p style="font:11px Verdana">
+	Hak Cipta &copy; 2010 Dinas Perhubungan, Komunikasi Dan Informatika Provinsi DIY
+	</p>
+	<p style="font:12px Courier New">
+	Telp. +62 (274) 520424 Fax. +62 (274) 555246 <br/>
+	Email: <b>dishubkominfo@jogjaprov.go.id</b>
+	</p>
+	</div>
+</div>
+</body>
+</html>
